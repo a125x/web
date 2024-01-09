@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+function circle_area(length) {
+	return 3.141592653589793 * length**2;
+}
+
+function square_area(length) {
+	return length**2;
+}
+
+function myCalculate(type, length, circle_area, square_area) {
+	if (type == 'circle') {
+		return circle_area(length);
+	}	
+	else if (type == 'square') {
+		return square_area(length);
+	}
+}
+
+let type = prompt('enter type');
+let length = prompt('enter length');
+alert(myCalculate(type, length, circle_area, square_area));
+	
+</script>
+</body>
+</html>

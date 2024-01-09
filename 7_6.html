@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+function goodNight (){
+	alert('Добрый вечер!');
+}
+
+function goodMorning (){
+	alert('Доброе утро!');
+}
+
+function goodDay (){
+	alert('Добрый день!');
+}
+
+let timeNow = prompt("Введите время - ");
+
+function helloFunction(timeNow, f1, f2, f3) {
+
+	if(timeNow > 18){
+		f1();
+	}
+
+	if(timeNow < 11){
+		f2();
+	}
+
+
+        if (timeNow >= 11 && timeNow <= 18){
+		f3();
+	}
+
+}
+
+helloFunction(timeNow, goodNight, goodMorning, goodDay);
+</script>
+</body>
+</html>
